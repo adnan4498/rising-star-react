@@ -11,6 +11,8 @@ import usa from "../../public/images/carousel-images/usa-img.jpg";
 import thailand from "../../public/images/carousel-images/thailand-img.jpg";
 // import Image from "next/image";
 
+import logo from "../../public/images/rising-star-logo.png";
+
 const CarouselSection = () => {
   const responsive = {
     desktop: {
@@ -135,7 +137,10 @@ const CarouselSection = () => {
                 <span className="message absolute font-medium lg:bottom-[40px] bottom-[40px] left-[12px] text-[14px] text-white opacity-0 transition-opacity duration-300">
                   {item.message}
                 </span>
-                <span className="message opacity-0 transition-opacity duration-300 absolute top-[10px] left-[12px] text-[16px] text-white font-bold">R</span>
+                {/* <span className="message opacity-0 transition-opacity duration-300 absolute top-[10px] left-[12px] text-[16px] text-white font-bold">R</span> */}
+                <div className="message w-9 opacity-0 transition-opacity duration-300 absolute top-[15px] left-[12px]">
+                  <img src={logo} />
+                </div>
               </div>
             </div>
           ))}

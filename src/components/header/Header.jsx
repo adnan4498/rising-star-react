@@ -34,7 +34,7 @@ const Header = ({ hideLi, toggleDrawer }) => {
                 src={logo}
                 width={60} // Set your desired width
                 height={100} // Set your desired height
-                // objectFit="contain" 
+                // objectFit="contain"
                 alt="Logo" // Always good to have an alt attribute for accessibility
               />
             </div>{" "}

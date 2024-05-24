@@ -5,12 +5,12 @@ import Header from "./components/header/Header";
 const VisaDetails = () => {
   const location = useLocation();
 
-  const { name, bg, bg2, bg3, bg4, message } = location.state || {}; // Destructure 'name' from state
+  const { name, bg, bg2, bg3, bg4, message, visaRequirements, duration } = location.state || {}; // Destructure 'name' from state
 
   const hideLi = true;
   const toggleDrawer = true;
 
-  console.log(bg2, "bg222");
+  console.log(visaRequirements, "rrr");
 
   return (
     <div className="mb-20">
@@ -27,7 +27,7 @@ const VisaDetails = () => {
         </div>
       </div>
 
-      <div className="mt-10 block lg:flex">
+      {/* <div className="mt-10 block lg:flex">
         <div className="text-lg bg-[#E3E3E1] lg:w-6/12 lg:text-left lg:pl-5 text-center py-6 lg:pt-10 lg:pb-10">
           <h2 className="text-5xl font-semibold lg:pb-8 ">About</h2>
 
@@ -103,7 +103,7 @@ const VisaDetails = () => {
         <div className="lg:w-6/12">
           <img src={bg4} className="w-full h-full" />
         </div>
-      </div>
+      </div> */}
 
       <div>
         <div>
@@ -114,7 +114,7 @@ const VisaDetails = () => {
 
         <div className="text-sm pl-2 pt-6">
           <div class="">
-            <ul>
+            {/* <ul>
               <li>
                 <strong className="text-lg">Original passport</strong>:{" "}
                 <li class="list-disc list-inside">
@@ -179,7 +179,12 @@ const VisaDetails = () => {
                   marriage certificate.
                 </li>
               </li>
-            </ul>
+            </ul> */}
+            {visaRequirements.map((item , index)=> (
+              <div className="lg:text-lg text-base font-semibold p-1">
+                {item}
+              </div>
+            ))}
           </div>
         </div>
 
@@ -187,8 +192,8 @@ const VisaDetails = () => {
           <div className="border border-[#57c0e4] px-4 py-2 text-white text-4xl mt-10 bg-[#57c0e4] font-semibold">
             Processing Time
           </div>
-          <h2 className="font-semibold text-xl pl-3 pt-3">
-            15 to 20 working days
+          <h2 className="lg:text-lg text-base font-semibold pl-3 pt-3">
+            {duration}
           </h2>
         </div>
       </div>
@@ -199,3 +204,4 @@ const VisaDetails = () => {
 };
 
 export default VisaDetails;
+

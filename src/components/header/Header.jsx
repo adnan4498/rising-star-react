@@ -9,7 +9,7 @@ import hamburgerIcon from "../../../public/images/hamburger-icon.png";
 import { Link } from "react-router-dom";
 import { Button, Drawer } from "antd";
 
-const Header = ({ hideLi, toggleDrawer }) => {
+const Header = ({ hideLi, toggleDrawer, headerBg, liColor}) => {
   const [open, setOpen] = useState(false);
 
   const showDrawer = () => {
@@ -22,13 +22,14 @@ const Header = ({ hideLi, toggleDrawer }) => {
   const visaProp = "my visa";
 
   return (
-    <div className="header-container">
+    <div className={`header-container ${headerBg} `}>
       <div className="pt-4 px-6">
         <div className="flex justify-between items-center  text-[#ebe2e2]">
           <div className="flex justify-center items-center font-semibold text-3xl">
             {/* <div>
               <img src={logo} width={100} />
             </div> */}
+            <Link to="/">
             <div>
               <img
                 src={logo}
@@ -37,10 +38,11 @@ const Header = ({ hideLi, toggleDrawer }) => {
                 // objectFit="contain"
                 alt="Logo" // Always good to have an alt attribute for accessibility
               />
-            </div>{" "}
+            </div>
+            </Link>
           </div>
 
-          <ul className=" hidden lg:flex gap-16">
+          <ul className={`lg:flex gap-10 text-2xl font-semibold hidden ${liColor} `}>
             <li>Home</li>
             <li>Tours</li>
             <Link to="/visa" state={{ visaProp }}>
@@ -48,6 +50,12 @@ const Header = ({ hideLi, toggleDrawer }) => {
             </Link>
             <li>Services</li>
             <li>Contact Us</li>
+          </ul>
+
+          <ul className={`flex lg:hidden text-lg font-semibold ${liColor} `}>
+            <Link to="/visa" state={{ visaProp }}>
+              <li>Visas</li>
+            </Link>{" "}
           </ul>
 
           <div className="hidden lg:block border border-[#57c0e4] px-4 py-2 rounded-md bg-[#57c0e4] font-semibold">

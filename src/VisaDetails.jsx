@@ -7,7 +7,7 @@ const VisaDetails = () => {
 
   const { name, bg, bg2, bg3, bg4, message, visaRequirements, duration } = location.state || {}; // Destructure 'name' from state
 
-  const hideLi = true;
+  const hideLi = "hidden";
   const toggleDrawer = true;
 
   console.log(visaRequirements, "rrr");

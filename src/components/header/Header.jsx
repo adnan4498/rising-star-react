@@ -42,7 +42,7 @@ const Header = ({ hideLi, toggleDrawer, headerBg, liColor}) => {
             </Link>
           </div>
 
-          <ul className={`lg:flex gap-10 text-2xl font-semibold hidden ${liColor} `}>
+          <ul className={`lg:flex gap-10 text-2xl font-semibold hidden ${liColor} ${hideLi}`}>
             <li>Home</li>
             <li>Tours</li>
             <Link to="/visa" state={{ visaProp }}>
@@ -52,7 +52,7 @@ const Header = ({ hideLi, toggleDrawer, headerBg, liColor}) => {
             <li>Contact Us</li>
           </ul>
 
-          <ul className={`flex lg:hidden text-lg font-semibold ${liColor} `}>
+          <ul className={`flex lg:hidden text-lg font-semibold ${liColor} ${hideLi}`}>
             <Link to="/visa" state={{ visaProp }}>
               <li>Visas</li>
             </Link>{" "}

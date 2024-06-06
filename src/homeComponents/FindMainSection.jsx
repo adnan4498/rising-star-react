@@ -2,6 +2,7 @@
 import React from "react";
 import { SearchOutlined } from "@ant-design/icons";
 import { Button, Input, Select, Space } from "antd";
+import { Link } from "react-router-dom";
 
 const FindMainSection = (props) => {
   const { Search } = Input;
@@ -40,9 +41,11 @@ const FindMainSection = (props) => {
               className="lg:w-[64vw] w-[90vw]"
             >
               <Input placeholder={props.placeHolder} className="h-[35px] lg:h-[46px] " />
+              <Link to="/visa">
               <Button className="bg-[#57c0e4] border border-[#57c0e4] h-[35px] lg:h-[46px] text-white font-semibold lg:text-sm text-xs">
                 {props.btnText}
               </Button>
+              </Link>
             </Space.Compact>
           </Space>
         </div>

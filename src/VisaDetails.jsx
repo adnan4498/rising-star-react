@@ -5,7 +5,7 @@ import Header from "./components/header/Header";
 const VisaDetails = () => {
   const location = useLocation();
 
-  const { name, bg, bg2, bg3, bg4, message, visaRequirements, duration } = location.state || {}; // Destructure 'name' from state
+  const { name, bg, message, visaRequirements, duration } = location.state || {}; // Destructure 'name' from state
 
   const hideLi = "hidden";
   const toggleDrawer = true;
@@ -180,7 +180,7 @@ const VisaDetails = () => {
                 </li>
               </li>
             </ul> */}
-            {visaRequirements.map((item , index)=> (
+            {visaRequirements?.map((item , index)=> (
               <div className="lg:text-lg text-base font-semibold p-1">
                 {item}
               </div>

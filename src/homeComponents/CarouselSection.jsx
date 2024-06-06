@@ -126,7 +126,7 @@ const CarouselSection = () => {
                 <img
                   src={item.item}
                   alt={item.text}
-                  className="w-96 h-72 object-cover rounded-[4px]"
+                  className="w-96 h-72 2xl:w-full object-cover rounded-[4px]"
                 />
                 <div className="image-overlay"></div>
               </div>

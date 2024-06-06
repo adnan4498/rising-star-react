@@ -72,7 +72,7 @@ const Visas = () => {
       flag: usaFlag,
       name: "AMERICA",
       message: "Experience the diverse landscapes of America",
-      bg: "bg-england-banner-image",
+      bg: "bg-america-banner",
       bg2: englandBg2,
       bg3: englandBg3,
       bg4: englandBg4,
@@ -94,7 +94,7 @@ const Visas = () => {
       flag: austriliaFlag,
       name: "AUSTRALIA",
       message: "Discover the wonders of Australia",
-      bg: "bg-england-banner-image",
+      bg: "bg-australia-banner-2",
       bg2: englandBg2,
       bg3: englandBg3,
       bg4: englandBg4,
@@ -117,7 +117,7 @@ const Visas = () => {
       flag: azerbaijanFlag,
       name: "AZERBAIJAN",
       message: "Unveil the beauty of Azerbaijan",
-      bg: "bg-england-banner-image",
+      bg: "bg-azerbaijan-banner",
       bg2: englandBg2,
       bg3: englandBg3,
       bg4: englandBg4,
@@ -136,7 +136,7 @@ const Visas = () => {
       flag: bahrainFlag,
       name: "BAHRAIN",
       message: "Experience the culture of Bahrain",
-      bg: "bg-england-banner-image",
+      bg: "bg-bahrain-banner",
       bg2: englandBg2,
       bg3: englandBg3,
       bg4: englandBg4,
@@ -158,7 +158,7 @@ const Visas = () => {
       flag: canadaFlag,
       name: "CANADA",
       message: "Explore the vast wilderness of Canada",
-      bg: "bg-england-banner-image",
+      bg: "bg-canada-banner",
       bg2: englandBg2,
       bg3: englandBg3,
       bg4: englandBg4,
@@ -183,7 +183,7 @@ const Visas = () => {
       flag: chinaFlag,
       name: "CHINA",
       message: "Delve into the ancient traditions of China",
-      bg: "bg-england-banner-image",
+      bg: "bg-china-banner",
       bg2: englandBg2,
       bg3: englandBg3,
       bg4: englandBg4,
@@ -206,7 +206,7 @@ const Visas = () => {
       flag: dubaiFlag,
       name: "DUBAI",
       message: "Discover the luxury and innovation of Dubai",
-      bg: "bg-england-banner-image",
+      bg: "bg-dubai-banner",
       bg2: englandBg2,
       bg3: englandBg3,
       bg4: englandBg4,
@@ -224,7 +224,7 @@ const Visas = () => {
       flag: germanyFlag,
       name: "GERMANY",
       message: "Experience the rich heritage of Germany",
-      bg: "bg-england-banner-image",
+      bg: "bg-germany-banner",
       bg2: englandBg2,
       bg3: englandBg3,
       bg4: englandBg4,
@@ -249,7 +249,7 @@ const Visas = () => {
       flag: indonesiaFlag,
       name: "INDONESIA",
       message: "Explore the tropical paradise of Indonesia",
-      bg: "bg-england-banner-image",
+      bg: "bg-indonesia-banner",
       bg2: englandBg2,
       bg3: englandBg3,
       bg4: englandBg4,
@@ -274,7 +274,7 @@ const Visas = () => {
       flag: italyFlag,
       name: "ITALY",
       message: "Enjoy the art and cuisine of Italy",
-      bg: "bg-england-banner-image",
+      bg: "bg-italy-banner",
       bg2: englandBg2,
       bg3: englandBg3,
       bg4: englandBg4,
@@ -297,7 +297,7 @@ const Visas = () => {
       flag: japanFlag,
       name: "JAPAN",
       message: "Discover the fusion of tradition and modernity in Japan",
-      bg: "bg-england-banner-image",
+      bg: "bg-japan-banner",
       bg2: englandBg2,
       bg3: englandBg3,
       bg4: englandBg4,
@@ -321,78 +321,199 @@ const Visas = () => {
       flag: malaysiaFlag,
       name: "MALAYSIA",
       message: "Experience the cultural diversity of Malaysia",
+      bg: "bg-malaysia-banner",
+      visaRequirements: [
+        "Original Passport with 08 months validity attach previous passport if any",
+        "Account Maintenance Certificate With Bank Statement Last Six Month.",
+        "Return Air Ticket",
+        "Travel Agency Undertaking On Letter Head.",
+        "Valid CNIC Copy",
+        "Minimum Balance 100,000/- (For Single Person).",
+        "Two Photographs Size (35 x 50) in White Back Ground (Mate finish paper).",
+        "Request Letter for Embassy on Company Letterhead with Visiting Card.",
+        "Note: All visas charges are non-refundable in case of Visa reject or Delay."
+      ],
+      duration: ["Visa Processing Time 7 To 8 Working Days"]      
     },
     {
       id: 13,
       flag: myanmarFlag,
       name: "MYANMAR",
       message: "Uncover the mystical beauty of Myanmar",
+      bg: "bg-myanmar-banner",
+      visaRequirements: [
+        "Original passport with 8 months validity attach previous passport if any. 2nd page must be signed",
+        "2 Passport size recent photographs. (Background should be white, 4.8*3.8)",
+        "Work Proof",
+        "Valid CNIC copy",
+        "FRC or MRC if family",
+        "Applicant Mobile Number",
+        "Note: All visas charges are non-refundable in case of Visa reject or Delay."
+      ],
+      duration: ["Visa Processing Time 15 To 20 Working Days"]
+      
     },
     {
       id: 14,
       flag: omanFlag,
       name: "OMAN",
       message: "Explore the enchanting landscapes of Oman",
+      bg: "bg-oman-banner",
+      visaRequirements: [
+        "Original Passport With 08 months validity attach previous passport if any.",
+        "Four Passport Size Picture with Blue Background.",
+        "Valid CNIC Copy.",
+        "Note: All visas charges are non-refundable in case of Visa reject or Delay."
+      ],
+      duration: ["Visa Processing Time is 1 Month"]
+      
     },
     {
       id: 15,
       flag: philipineFlag,
       name: "PHILIPPINES",
       message: "Discover the stunning islands of the Philippines",
+      bg: "bg-philippines-banner",
+      visaRequirements: [
+        "Original passport with 8 months validity attach previous passport if any.",
+        "Account maintenance certificate with bank statement last six months. (Minimum closing balance Rs: 250000 for single person) must be attested by the Ministry of Foreign Affairs.",
+        "Work Proof (If applicant has his/her own business so he/she would have to provide NTN, visiting card, and company's letterhead. If applicant is working somewhere, he/she would have to provide company's joining letter, last 6 months salary slip, and leave letter).",
+        "Valid CNIC copy.",
+        "Police Character Certificate.",
+        "4 photographs (35*45) size with white background.",
+        "If a person will travel with family, he/she would have to provide FRC (Family Registration Certificate).",
+        "If a couple will travel, they would have to provide Nadra computerized marriage certificate.",
+        "Note: All visas charges are non-refundable in case of Visa rejection or delay."
+      ],
+      duration: ["Visa Processing Time 15 To 20 Working Days"]
+      
     },
     {
       id: 16,
       flag: qatarFlag,
       name: "QATAR",
       message: "Experience the modern marvels of Qatar",
+      bg: "bg-qatar-banner",
+      visaRequirements: [
+        "Original Passport With 08 months validity attach previous passport if any",
+        "Four Passport Size Picture with Blue Background",
+        "Valid CNIC Copy",
+        "Note: All visas charges are non-refundable in case of Visa reject or Delay"
+      ],
+      duration: ["Visa Processing Time is 1 Month"]
+      
     },
     {
       id: 17,
       flag: russiaFlag,
       name: "RUSSIA",
       message: "Explore the vast expanse of Russia",
+      bg: "bg-russia-banner",
+      visaRequirements: [
+        "Passport valid for at least 6 months after intended departure date from Russia",
+        "Two passport-size photos signed on the back",
+        "If Tour Group or Cruise Passenger: Letter from tour company or cruise line confirming itinerary and including a copy of the confirmation from authorized Russian travel company which shows the reference number and confirmation number for the visa",
+        "If Individual Travel: Confirmation of hotel arrangements from authorized travel company, and Air tickets showing reference number/ PNR and confirmation number for the visa",
+        "Note: All visas charges are non-refundable in case of Visa reject or Delay",
+        "Single entry/transit visa Rs. 20000 (issued in 10-15 days)",
+        "Single entry/transit visa Rs. 30000 (issued in 5 - 7 days) URGENT",
+        "Double/Multiple entry visa Rs. 38000 (issued in 10 - 15 days)",
+        "Double/Multiple entry visa Rs. 48000 (issued in 5 - 7 day) URGENT",
+        "The fee is paid in cash in Pakistani rupees at the time of submitting the Application form"
+      ],
+      duration: ["Visa Processing Time is 10-15 Days"]
     },
     {
       id: 18,
       flag: saudiFlag,
       name: "SAUDI ARABIA",
       message: "Discover the ancient heritage of Saudi Arabia",
+      bg: "bg-saudi-banner",
+      visaRequirements: [
+        "Original Passport With 08 months validity attach previous passport if any",
+        "Four Passport Size Picture with Blue Background",
+        "Valid CNIC Copy",
+        "Note: All visas charges are non-refundable in case of Visa reject or Delay"
+      ],
+      duration: ["Visa Processing Time 15 To 16 Working Days"]
+      
     },
-    {
-      id: 19,
-      flag: singaporeFlag,
-      name: "SINGAPORE",
-      message: "Experience the vibrant cityscape of Singapore",
-    },
+    // {
+    //   id: 19,
+    //   flag: singaporeFlag,
+    //   name: "SINGAPORE",
+    //   message: "Experience the vibrant cityscape of Singapore",
+    //   bg: "bg-singapore-banner",
+    // },
+    // {
+    //   id: 19,
+    //   flag: southAfricaFlag,
+    //   name: "SOUTH AFRICA",
+    //   message: "Explore the diverse wildlife of South Africa",
+    //   bg: "bg-south-africa-banner",
+    // },
     {
       id: 20,
-      flag: southAfricaFlag,
-      name: "SOUTH AFRICA",
-      message: "Explore the diverse wildlife of South Africa",
-    },
-    {
-      id: 21,
       flag: tajikistanFlag,
       name: "TAJIKISTAN",
       message: "Discover the rugged beauty of Tajikistan",
+      bg: "bg-tajikistan-banner",
+      visaRequirements: [
+        "Original Passport With 08 months validity attach previous passport if any",
+        "Four Passport Size Picture with Blue Background",
+        "Valid CNIC Copy",
+        "Hotel Voucher",
+        "Note: All visas charges are non-refundable in case of Visa reject or Delay"
+      ],
+      duration: ["Visa Processing Time is 1 Month"]
+      
     },
+    // {
+    //   id: 21,
+    //   flag: thailandFlag,
+    //   name: "THAILAND",
+    //   message: "Experience the tropical charm of Thailand",
+    //   bg: "bg-thailand-banner",
+    // },
     {
-      id: 22,
-      flag: thailandFlag,
-      name: "THAILAND",
-      message: "Experience the tropical charm of Thailand",
-    },
-    {
-      id: 23,
+      id: 19,
       flag: turkishFlag,
       name: "TURKEY",
       message: "Unveil the rich history of Turkey",
+      bg: "bg-turkey-banner",
+      visaRequirements: [
+        "Account Maintenance Certificate With Bank Statement Last Six Month Minimum Balance 300,000/- (For Single Person)",
+        "Two Photographs Size (2 x 2) in White Background (Matte finish paper)",
+        "Original Passport with 08 months validity attach previous passport if any",
+        "Return Air Ticket",
+        "Confirm Hotel Paid Voucher",
+        "Applicant Must Be Appearance In Embassy Fresh / Repeat",
+        "Request Letter for Embassy on Company Letterhead with Visiting Card",
+        "Valid CNIC Copy",
+        "Travel Insurance Policy or Letter",
+        "Polio vaccination Card",
+        "NTN Certificate",
+        "Note: All visas charges are non-refundable in case of Visa reject or Delay",
+        "Turkey Tourist Single Entry Visa Travel Validity 03 Months, Stay Validity 01 Month"
+      ],
+      duration: ["Visa Processing Time to 15 to 20 Working Days"]
+      
     },
     {
-      id: 24,
+      id: 20,
       flag: zimbabweFlag,
       name: "ZIMBABWE",
       message: "Explore the natural wonders of Zimbabwe",
+      bg: "bg-zimbabwe-banner",
+      visaRequirements: [
+        "Original passport with 8 months validity attach previous passport if any. 2nd page must be signed",
+        "2 Passport size recent photographs. (Background should be white, 35*45 mm)",
+        "Work Proof",
+        "Valid CNIC copy",
+        "FRC or MRC if family",
+        "Applicant Mobile Number"
+      ],
+      duration: ["Visa Processing Time 15 To 20 Working days"]      
     },
   ];
 
@@ -407,8 +528,8 @@ const Visas = () => {
   const placeHolder = "Country name";
   const headingColor = "text-gray-500";
 
-  const headerBg = "bg-white"
-  const liColor = "text-black"
+  const headerBg = "bg-white";
+  const liColor = "text-black";
 
   return (
     <div>
@@ -448,9 +569,6 @@ const Visas = () => {
                 state={{
                   name: item.name,
                   bg: item.bg,
-                  bg2: item.bg2,
-                  bg3: item.bg3,
-                  bg4: item.bg4,
                   message: item.message,
                   visaRequirements: item.visaRequirements,
                   duration: item.duration,

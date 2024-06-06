@@ -6,9 +6,9 @@ import dubai from "../../public/images/top-countries/dubai.jpg";
 import england from "../../public/images/top-countries/england.jpg";
 import newZealand from "../../public/images/top-countries/new-zealand.jpg";
 import southAsia from "../../public/images/top-countries/south-asia.jpg";
+import { Link } from "react-router-dom";
 
 const TopCountries = () => {
-  
   const topCountryImages = [
     {
       id: 0,
@@ -43,31 +43,45 @@ const TopCountries = () => {
 
   return (
     <div className="mb-20 mt-24">
-      <div className="tracking-[4px] text-[#b5b6b8] text-sm lg:text-lg text-center" >TOP COUNTRIES</div>
+      <div className="tracking-[4px] text-[#b5b6b8] text-sm lg:text-lg text-center">
+        TOP COUNTRIES
+      </div>
       <div className="tracking-[1px] text-[#4d4e50] lg:text-3xl text-2xl text-center my-6 font-medium">
         THESE DESTINATIONS ARE FAVORITES AMONG OUR CLIENTS
       </div>
       <div className="lg:grid grid-cols-2 relative">
         {/* Map over the topRowImages array */}
         {topRowImages.map((item) => (
-          <div key={item.id} className="top-countries-image cursor-pointer">
-            <img src={item.img} alt={item.item} className="h-full" />
-            <div className="image-overlay"></div>
-            <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 country-name">
-              <h2 className="lg:text-3xl text-xl text-white">{item.name}</h2>
-            </div>
-          </div>
+          <>
+            <Link to="/visa">
+              <div key={item.id} className="top-countries-image cursor-pointer">
+                <img src={item.img} alt={item.item} className="h-full" />
+                <div className="image-overlay"></div>
+                <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 country-name">
+                  <h2 className="lg:text-3xl text-xl text-white">
+                    {item.name}
+                  </h2>
+                </div>
+              </div>
+            </Link>
+          </>
         ))}
       </div>
       <div className="lg:grid grid-cols-3">
         {bottomRowImages.map((item) => (
-          <div key={item.id} className="top-countries-image cursor-pointer">
-          <img src={item.img} alt={item.item} className="h-full" />
-            <div className="image-overlay"></div>
-            <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 country-name">
-              <h2 className="lg:text-3xl text-xl text-white">{item.name}</h2>
-            </div>
-          </div>
+          <>
+            <Link to="/visa">
+              <div key={item.id} className="top-countries-image cursor-pointer">
+                <img src={item.img} alt={item.item} className="h-full" />
+                <div className="image-overlay"></div>
+                <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 country-name">
+                  <h2 className="lg:text-3xl text-xl text-white">
+                    {item.name}
+                  </h2>
+                </div>
+              </div>
+            </Link>
+          </>
         ))}
       </div>
     </div>

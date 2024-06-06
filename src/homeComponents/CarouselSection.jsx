@@ -12,6 +12,7 @@ import thailand from "../../public/images/carousel-images/thailand-img.jpg";
 // import Image from "next/image";
 
 import logo from "../../public/images/rising-star-logo.png";
+import { Link } from "react-router-dom";
 
 const CarouselSection = () => {
   const responsive = {
@@ -122,6 +123,7 @@ const CarouselSection = () => {
         <Carousel responsive={responsive} infinite={true}>
           {carouselImgs.map((item, index) => (
             <div className="mx-2 carousel-image" key={index}>
+              <Link to="/visa">
               <div className="relative">
                 <img
                   src={item.item}
@@ -130,6 +132,7 @@ const CarouselSection = () => {
                 />
                 <div className="image-overlay"></div>
               </div>
+              </Link>
               <div className="custom-font-family">
                 <span className="absolute font-medium lg:bottom-[70px] bottom-[70px] left-[12px] lg:text-lg text-2xl text-white">
                   {item.text}
